@@ -1,6 +1,8 @@
 
 import { h } from 'preact';
 import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
+
 
 export default function App() {
   const { t, i18n } = useTranslation();
@@ -10,11 +12,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col font-sans">
-      <header className="flex justify-end p-4 bg-white shadow-sm">
+    <div className="bg-gradient-to-br from-blue-50 to-gray-50 min-h-screen flex flex-col font-sans">
+      <header className="flex justify-end p-4">
         <button
           onClick={toggleLang}
-          className="inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150"
+          className="fixed inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150"
         >
           {i18n.language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
         </button>
@@ -22,64 +24,61 @@ export default function App() {
 
       <main className="flex-grow">
         {/* Hero */}
-        <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-16 bg-gradient-to-b from-white to-gray-100">
+        <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-16">
           
           
           <p className="text-xl md:text-2xl mb-6">{t('hero.title')}</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('hero.subtitle')}</h1>
-          <p className="text-4xl md:text-5xl font-bold text-blue-600">{t('hero.tagline')}</p>
+          <p className="text-4xl md:text-5xl font-bold text-blue-600 w-80 md:w-full"
+          >{t('hero.tagline')}</p>
         </section>
 
      
 
         {/* Importancia */}
-        <section className="py-20 px-6 bg-gray-100">
+        <section className="py-20 px-6 ">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-blue-600">{t('importance.title')}</h2>
             <p className="text-lg text-gray-700">{t('importance.description')}</p>
-            
           </div>
         </section>
 
    {/* Proceso */}
   
-   <section className="py-20 bg-white">
+  <section className="py-20 bg-white">
   <div className="container mx-auto px-6">
-   
-     <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-4 mb-4">
-    <div className="lg:col-span-3 rounded-xl mb-1">
-      <h2 className="inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150 mb-2">{t('steps.title')}</h2>
-
-    </div>
-   
-
-    <div className="lg:h-80 lg:col-span-2 bg-gray-100 p-6 rounded-xl shadow lg:mb-0 mb-4">
-      <h3 className="text-xl font-semibold mb-2">{t('steps.step1')}</h3>
-      <p className="text-gray-700">{t('steps.step1-sub')}</p>
-    </div>
     
-    <div className="bg-gray-100 p-6 rounded-xl shadow">
-      <h3 className="text-xl font-semibold mb-2">{t('steps.step2')}</h3>
-      <p className="text-gray-700">{t('steps.step2-sub')}</p>
+    {/* Título */}
+    <div className="">
+      <h2 className="inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150 mb-2">
+        {t('steps.title')}
+      </h2>
     </div>
 
+    {/* Primeras dos columnas */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+      <div className="bg-gradient-to-br from-blue-50 to-gray-50 p-6 rounded-xl shadow">
+        <h3 className="text-xl font-semibold mb-2">{t('steps.step1')}</h3>
+        <p className="text-gray-700">{t('steps.step1-sub')}</p>
+      </div>
 
-  </div>
+      <div className="lg:h-60 bg-gradient-to-br from-blue-50 to-gray-50 p-6 rounded-xl shadow">
+        <h3 className="text-xl font-semibold mb-2">{t('steps.step2')}</h3>
+        <p className="text-gray-700">{t('steps.step2-sub')}</p>
+      </div>
+    </div>
 
-
-
-    
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div className="col-span-3 bg-gray-100 p-6 rounded-xl shadow">
+    {/* Última columna centrada */}
+    <div className="grid grid-cols-1">
+      <div className="bg-gradient-to-br from-blue-50 to-gray-50 p-6 rounded-xl shadow">
         <h3 className="text-xl font-semibold mb-2">{t('steps.step3')}</h3>
         <p className="text-gray-700">{t('steps.step3-sub')}</p>
       </div>
-      
     </div>
-  </div>
 
-   
+  </div>
 </section>
+
 
  {/* Valor */}
         <section className="pb-20 px-6 bg-white">
