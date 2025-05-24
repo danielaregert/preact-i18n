@@ -50,7 +50,7 @@ export default function App() {
     
     {/* Título */}
     <div className="">
-      <h2 className="inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150 mb-2">
+      <h2 className="inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150 mb-4">
         {t('steps.title')}
       </h2>
     </div>
