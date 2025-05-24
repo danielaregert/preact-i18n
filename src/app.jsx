@@ -102,7 +102,7 @@ export default function App() {
         </section>
       </main>
       <footer className="text-sm text-center text-gray-400 py-6">
-  © 2025 Balvanera. Enfocados en lo esencial.
+{t('footer.copy')}
 </footer>
     </div>
   );
