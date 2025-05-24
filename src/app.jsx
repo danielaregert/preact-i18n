@@ -28,7 +28,7 @@ export default function App() {
           
           
           <p className="text-xl md:text-2xl mb-6">{t('hero.title')}</p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('hero.subtitle')}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-1 md:mb-4">{t('hero.subtitle')}</h1>
           <p className="text-4xl md:text-5xl font-bold text-blue-600 w-80 md:w-full"
           >{t('hero.tagline')}</p>
         </section>
