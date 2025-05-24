@@ -36,7 +36,7 @@ export default function App() {
      
 
         {/* Importancia */}
-        <section className="py-20 px-6 ">
+        <section className="bg-white pt-20 px-6 ">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-blue-600">{t('importance.title')}</h2>
             <p className="text-lg text-gray-700">{t('importance.description')}</p>
