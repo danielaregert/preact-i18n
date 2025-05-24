@@ -10,24 +10,100 @@ export default function App() {
   };
 
   return (
-    
-
-    <main class="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6 gap-6">
-      <div>
-        <h1 class="text-4xl font-bold text-blue-600 mb-4 font-sans">{t('welcome')}</h1>
-      </div>
-
-      <div class="text-center">
-        <p class="mt-4 text-gray-700">{t('description')}</p>
-        <h1 class="text-3xl font-semibold mb-2"></h1>
-        <p class="text-lg mb-4">{t('description')}</p>
+    <div className="min-h-screen bg-gray-100 flex flex-col font-sans">
+      <header className="flex justify-end p-4 bg-white shadow-sm">
         <button
-          class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
           onClick={toggleLang}
+          className="inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150"
         >
           {i18n.language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
         </button>
+      </header>
+
+      <main className="flex-grow">
+        {/* Hero */}
+        <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-16 bg-gradient-to-b from-white to-gray-100">
+          
+          
+          <p className="text-xl md:text-2xl mb-6">{t('hero.title')}</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('hero.subtitle')}</h1>
+          <p className="text-4xl md:text-5xl font-bold text-blue-600">{t('hero.tagline')}</p>
+        </section>
+
+     
+
+        {/* Importancia */}
+        <section className="py-20 px-6 bg-gray-100">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-blue-600">{t('importance.title')}</h2>
+            <p className="text-lg text-gray-700">{t('importance.description')}</p>
+            
+          </div>
+        </section>
+
+   {/* Proceso */}
+  
+   <section className="py-20 bg-white">
+  <div className="container mx-auto px-6">
+   
+     <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-4 mb-4">
+    <div className="lg:col-span-3 rounded-xl mb-1">
+      <h2 className="inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150 mb-2">{t('steps.title')}</h2>
+
+    </div>
+   
+
+    <div className="lg:h-80 lg:col-span-2 bg-gray-100 p-6 rounded-xl shadow lg:mb-0 mb-4">
+      <h3 className="text-xl font-semibold mb-2">{t('steps.step1')}</h3>
+      <p className="text-gray-700">{t('steps.step1-sub')}</p>
+    </div>
+    
+    <div className="bg-gray-100 p-6 rounded-xl shadow">
+      <h3 className="text-xl font-semibold mb-2">{t('steps.step2')}</h3>
+      <p className="text-gray-700">{t('steps.step2-sub')}</p>
+    </div>
+
+
+  </div>
+
+
+
+    
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="col-span-3 bg-gray-100 p-6 rounded-xl shadow">
+        <h3 className="text-xl font-semibold mb-2">{t('steps.step3')}</h3>
+        <p className="text-gray-700">{t('steps.step3-sub')}</p>
       </div>
-    </main>
+      
+    </div>
+  </div>
+
+   
+</section>
+
+ {/* Valor */}
+        <section className="pb-20 px-6 bg-white">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl text-blue-600 md:text-3xl font-semibold mb-4">{t('value.title')}</h2>
+            <p className="text-lg text-gray-700">{t('value.description')}</p>
+             <button className="mt-5 inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150"
+            href="mailto:contacto@gmail.com">{t('value.calendly')}</button>
+          </div>
+        </section>
+
+      
+
+        {/* Cierre */}
+        <section className="py-20 px-6 bg-black text-white hidden">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4">{t('closing.title')}</h2>
+            <p className="text-lg">{t('closing.description')}</p>
+          </div>
+        </section>
+      </main>
+      <footer className="text-sm text-center text-gray-400 py-6">
+  © 2025 Balvanera. Enfocados en lo esencial.
+</footer>
+    </div>
   );
 }

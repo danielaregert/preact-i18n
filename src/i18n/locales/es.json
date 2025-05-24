@@ -1,4 +1,30 @@
 {
-  "welcome": "Bienvenida",
-  "description": "Este es un ejemplo con Preact + i18n"
+  "hero": {
+    "title": "Hola! Somos Balvanera",
+    "subtitle": "Hacemos la web que necesitás ",
+    "tagline": "para el negocio que tenés."
+  },
+  "importance": {
+    "title": "Poné tu negocio online.",
+    "description": "Y no de cualquier forma: bien hecho, con estrategia y diseño que funciona."
+  },
+  "steps": {
+    "title": "Hagamos realidad tu idea",
+    "step1": "Vení con tu idea",
+    "step1-sub":"Nos contás lo que querés lograr.",
+    "step2": "Armamos un plan",
+    "step2-sub":"Definimos estrategia, diseño y desarrollo.",
+    "step3": "Concretamos",
+    "step3-sub":"Te vás content@ y con tu solución online."
+    
+  },
+  "value": {
+    "title": "Trabajar con profesionales es invertir bien.",
+    "description": "Cuidamos tu tiempo, tu inversión y tu idea.",
+    "calendly":"Agendá una reunión"
+  },
+  "closing": {
+    "title": "Queremos lo mismo que vos:",
+    "description": "Que tu negocio crezca."
+  }
 }

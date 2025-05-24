@@ -1,4 +1,29 @@
 {
-  "welcome": "Welcome",
-  "description": "This is a Preact + i18n example"
+  "hero": {
+    "title": "Hi! We're Balvanera",
+    "subtitle": "We build the website you need",
+    "tagline": "for the business you already have."
+  },
+  "importance": {
+    "title": "Get your business online.",
+    "description": "And not just any way: the right way, with strategy and effective design."
+  },
+  "steps": {
+    "title": "Let’s make your idea happen",
+    "step1": "Bring us your idea",
+    "step1-sub": "Tell us what you want to achieve.",
+    "step2": "We create a plan",
+    "step2-sub": "We define the strategy, design, and development.",
+    "step3": "We make it real",
+    "step3-sub": "You leave happy, with your online solution ready to go."
+  },
+  "value": {
+    "title": "Working with pros is a smart investment.",
+    "description": "We respect your time, your budget, and your idea.",
+    "calendly": "Book a meeting"
+  },
+  "closing": {
+    "title": "We want the same thing you do:",
+    "description": "For your business to grow."
+  }
 }
