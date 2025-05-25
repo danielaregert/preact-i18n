@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div className="bg-gradient-to-br from-blue-50 to-gray-50 min-h-screen flex flex-col font-sans">
-      <header className="flex justify-end p-4">
+            <header className="flex justify-end p-4">
         <button
           onClick={toggleLang}
           className="fixed inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150"
@@ -24,8 +24,8 @@ export default function App() {
 
       <main className="flex-grow">
         {/* Hero */}
-        <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-16">
-          
+        <section className="h-dvh flex flex-col justify-center items-center text-center px-6 -mt-8">
+    
           
           <p className="text-xl md:text-2xl mb-6">{t('hero.title')}</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-1 md:mb-4">{t('hero.subtitle')}</h1>
