@@ -85,7 +85,7 @@ export default function App() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl text-blue-600 md:text-3xl font-semibold mb-4">{t('value.title')}</h2>
             <p className="text-lg text-gray-700">{t('value.description')}</p>
-             <button className="mt-5 inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150"
+             <button className="me-2 mt-5 inline-flex items-center justify-center border border-blue-500 text-blue-500 font-medium text-sm py-2 px-4 rounded-full hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition duration-150"
             href="mailto:contacto@gmail.com">{t('value.calendly')}</button>
           </div>
         </section>
